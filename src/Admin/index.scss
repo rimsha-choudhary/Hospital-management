@@ -1,0 +1,255 @@
+.admin-dashboard {
+  display: flex;
+  .admin-header {
+    width: 100%;
+    margin-left: 250px;
+  }
+  .logo {
+    background: #000;
+    padding: 2px !important;
+    justify-content: center !important;
+    img {
+      width: auto;
+      height: 50px;
+    }
+  }
+  .admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid #f5f5f5;
+    background-color: gray;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        padding: 7px;
+        border-bottom: 1px solid #f5f5f5;
+        a {
+          color: #fff;
+          font-weight: bold;
+          text-decoration: none;
+        }
+        .heading {
+          color: #fff;
+          cursor: pointer;
+          font-weight: bold;
+          position: relative;
+          .arrow {
+            font-size: 35px;
+            position: absolute;
+            right: 0;
+            top: -5px;
+          }
+        }
+        .children {
+          div {
+            padding-top: 7px;
+          }
+        }
+      }
+    }
+  }
+  .mobile-sidebar {
+    display: none;
+  }
+  .content {
+    padding: 5px 10px;
+    text-align: left;
+    .heading {
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .doctors-heading {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  .breadcrumbs {
+    font-size: 12px;
+    .curr-page {
+      color: green;
+    }
+  }
+  .dashboard-content {
+    display: flex;
+    flex-wrap: wrap;
+    .div1,
+    .div2,
+    .div3,
+    .div4,
+    .div5 {
+      display: flex;
+      padding: 40px 20px;
+      font-size: 27px;
+      height: 170px;
+      position: relative;
+      margin-right: 15px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+      svg {
+        position: absolute;
+        font-size: 120px;
+        opacity: 0.35;
+        top: 10px;
+        right: 20px;
+      }
+    }
+    .div1 {
+      background: rgba(94, 173, 204, 0.88);
+    }
+    .div2 {
+      background: rgba(4, 126, 4, 0.88);
+    }
+    .div3 {
+      background: rgba(220, 166, 65, 0.88);
+    }
+    .div4 {
+      background: rgba(214, 50, 50, 0.88);
+    }
+    .div5 {
+      background: rgba(152, 48, 105, 0.88);
+    }
+  }
+  .dropdown {
+    .dropdown-menu {
+      padding: 0;
+      background-color: #eee;
+      a {
+        color: #000;
+        &:hover {
+          color: #0d395d;
+          font-weight: bold;
+          background-color: transparent;
+        }
+      }
+    }
+    button {
+      color: #fff;
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.admin-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  background-color: #000;
+  color: #fff;
+
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    li {
+      margin-left: 10px;
+    }
+  }
+
+  a {
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// -----ADD Doctor CSS START------
+.add_doc_container {
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+  form {
+    width: 90%;
+    margin: auto;
+    padding: 10px 0;
+  }
+  label {
+    float: left;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  button {
+    float: left;
+    padding: 8px 28px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #0d395d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// -----MANAGE Doctor CSS START------
+.manage_doc_container {
+  h3 {
+    font-size: 26px;
+    font-weight: 700;
+    padding: 30px 0;
+  }
+  table {
+    width: 95%;
+    border: 1px solid #000;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .admin-sidebar {
+    display: none;
+  }
+  .admin-mobile-sidebar {
+    display: block;
+    position: relative;
+    z-index: 2;
+    .cross-icon {
+      font-size: 25px;
+      position: absolute;
+      right: 5px;
+    }
+  }
+  .mobile-sidebar {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    z-index: 1;
+    color: #fff;
+    font-size: 30px;
+  }
+  .admin-header {
+    margin: 0 !important;
+  }
+  .admin-navbar {
+    padding-left: 50px;
+  }
+}

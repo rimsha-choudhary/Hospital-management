@@ -1,0 +1,19 @@
+.carousel .carousel-indicators button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.carousel .carousel-control-next-icon.changed {
+    /* background-image: url("./arrow-right-solid.svg"); */
+}
+
+.container-hh{
+    height: 100%;
+}
+
+.img-w{
+    width: 100% !important;
+    height: 700px !important;
+    object-fit: cover;
+}

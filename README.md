@@ -1,0 +1,2 @@
+---> open terminal and run npm install then npm start
+---> new terminal cd functions and run firebase emulators:start

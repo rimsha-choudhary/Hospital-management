@@ -1,0 +1,81 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .profile-form {
+    .login-form-holder {
+      padding: 20px;
+    }
+    .login-form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: none;
+      padding: 0;
+      margin: 0;
+      height: unset !important;
+      label {
+        float: left;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
+      form {
+        width: 100%;
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+        padding: 30px 0;
+      }
+      input::placeholder {
+        color: #000;
+      }
+      .form-control {
+        height: 35px;
+        padding: 0 5px;
+        margin-bottom: 8px;
+        border: 1px solid #000;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        &:focus {
+          border-color: #000;
+          box-shadow: none;
+        }
+        &:disabled {
+          background-color: #e2e2e2;
+        }
+      }
+    }
+    .login-btn {
+      width: 100%;
+      height: 60px;
+      background-color: #333;
+      border-radius: 10px;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .login-form {
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+    .login-img-holder {
+      h3 {
+        padding: 28px 0;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .login-form {
+      border: none;
+    }
+  }

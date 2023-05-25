@@ -1,0 +1,30 @@
+.doctor-dashboard {
+  .dashboard-header {
+    background-color: #352315 !important;
+  }
+  .dashboard-sidebar {
+    .admin-navbar {
+      background-color: #352315 !important;
+    }
+    .admin-sidebar {
+      background-color: #987554 !important;
+    }
+  }
+  .content {
+    form {
+      width: 90% !important;
+      margin: 30px auto !important;
+      button {
+        color: #fff;
+        border: none;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 8px 28px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        background-color: #0d395d;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+}

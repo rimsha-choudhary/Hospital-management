@@ -1,0 +1,107 @@
+.login-container {
+  .title {
+    padding: 20px 0;
+  }
+  .logins {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .logins-div {
+      position: relative;
+      img {
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      .login-text {
+        color: #fff;
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      .patient-bg {
+        background: #c72558;
+      }
+      .doctor-bg {
+        background: green;
+      }
+      .admin-bg {
+        background: #165887;
+      }
+    }
+  }
+}
+.login-img-holder img {
+  width: 75%;
+  float: left;
+}
+.login-form-holder {
+  padding: 20px;
+}
+.register-form {
+  height: auto !important;
+}
+.edit-form {
+  background-image: none;
+  display: flex;
+  height: 95vh;
+  padding: 25px 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gender-container {
+  display: flex;
+  width: 100%;
+  padding-bottom: 10px;
+  .gender-male {
+    input {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+    margin-right: 10px;
+  }
+  .gender-female {
+    input {
+      cursor: pointer;
+      margin-right: 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .login-form {
+    width: 100%;
+    height: auto;
+    border: none;
+  }
+  .login-img-holder img {
+    float: none;
+  }
+  .login-form-holder h3 {
+    padding: 28px 0;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .logins {
+    flex-wrap: wrap !important;
+    width: 90%;
+    margin: 0 auto;
+    .logins-div {
+      margin: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .login-form {
+    border: none;
+  }
+  .login-img-holder img {
+    float: none;
+  }
+}

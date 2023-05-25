@@ -1,0 +1,12 @@
+.change-password {
+  width: 70%;
+  padding: 20px 30px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  form {
+    label {
+      display: block;
+      text-align: left !important;
+    }
+  }
+}
